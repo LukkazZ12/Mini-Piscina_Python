@@ -22,8 +22,11 @@ def copy_list_to_dic():
 		('Burton' , '1939')
 	]
 	dic = {}
-	for item in d:
-		dic[item[1]] = item[0]
+	for musician, year in d:
+		if year in dic:
+			dic[year] += " " + musician
+		else:
+			dic[year] = musician
 	for item in dic:
 		print(f"{item} : {dic[item]}")
 
