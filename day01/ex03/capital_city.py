@@ -15,16 +15,10 @@ def get_capital_city():
 		"NJ": "Trenton",
 		"CO": "Denver"
 	}
-	given_state = sys.argv[1]
-	abbrev = ""
-	for state in states:
-		if state == given_state:
-			abbrev = states[state]
-	if not abbrev:
+	if sys.argv[1] in states:
+		print(capital_cities[states[sys.argv[1]]])
+	else:
 		print("Unknown state")
-	for capital in capital_cities:
-		if capital == abbrev:
-			print(f"{capital_cities[capital]}")
 
 if __name__ == '__main__':
 	get_capital_city()

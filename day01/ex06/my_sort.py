@@ -22,8 +22,8 @@ def sort_dict():
 		'Burton' : '1939',
 	}
 	sorted_d = sorted(d.items(), key=lambda x: (x[1], x[0]))
-	for item in sorted_d:
-		print(item[0])
+	for musician, year in sorted_d:
+		print(musician)
 
 if __name__ == '__main__':
 	sort_dict()

@@ -22,9 +22,10 @@ def get_state():
 			abbrev = capital
 	if not abbrev:
 		print("Unknown capital city")
-	for state in states:
-		if states[state] == abbrev:
-			print(f"{state}")
+	else:
+		for state in states:
+			if states[state] == abbrev:
+				print(f"{state}")
 
 if __name__ == '__main__':
 	get_state()
