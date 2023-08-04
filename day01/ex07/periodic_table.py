@@ -59,7 +59,7 @@ def build_table(elements):
 					+ elements[i][j][1].split(":")[1] + '</li>\n'\
 					+ '							<li>' + elements[i][j][2].split(" ")[2] + '</li>\n'\
 					+ '							<li>' + elements[i][j][3].split(":")[1] + '</li>\n'\
-					+ '							<li>eletrons:\n								'\
+					+ '							<li>eletrons:<br>'\
 					+ elements[i][j][4].split(":")[1] + '</li>\n'\
 					+ '						</ul>\n				</td>\n'
 			else:
